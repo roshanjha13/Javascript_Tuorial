@@ -67,3 +67,4 @@ const roshan = {
   job: "teacher",
   friends: ["Michael", "Kaushik", "Soumi"],
 };
+console.log(roshan);
