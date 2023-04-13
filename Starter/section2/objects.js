@@ -57,5 +57,13 @@
 
 
 */
+// in array order specify is must, but object used as unstructure data
+// key also named as property
 
-
+const roshan = {
+  firstName: "Roshan",
+  lastName: "Jha",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Kaushik", "Soumi"],
+};
