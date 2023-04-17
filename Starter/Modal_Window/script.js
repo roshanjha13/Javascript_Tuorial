@@ -6,7 +6,7 @@ console.log(btnsOpenModal);
 
 for (let i = 0; i < btnsOpenModal.length; i++)
   btnsOpenModal[i].addEventListener("click", function () {
-    console.log("Button clicked");
+    // console.log("Button clicked");
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });
@@ -20,3 +20,15 @@ const closeModal = function () {
 btnCloseModal.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", closeModal);
+
+// key board event-- global event
+document.addEventListener("keydown", function (e) {
+  //   console.log("A key is pressed");
+  console.log(e.key);
+  if (e.key === "Escape") {
+    // check model content escape class or not
+    if (!modal.classList.contains("hidden")) {
+      closeModal();
+    }
+  }
+});
