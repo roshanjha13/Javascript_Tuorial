@@ -165,7 +165,7 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
-
+/* .hidden */
 .hidden {
   display: none;
 }
