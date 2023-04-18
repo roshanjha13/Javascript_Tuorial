@@ -31,7 +31,7 @@ const init = function () {
   player1E1.classList.remove("player--active");
 };
 init();
-
+// switch player
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
