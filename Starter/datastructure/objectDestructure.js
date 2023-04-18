@@ -55,10 +55,11 @@ const {
   openingHours: hours,
   categories: tags,
 } = restaurant;
-
+console.log("----------------------------------------");
 console.log(restaurantName, hours, tags);
 
 const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log("----------------------------------------");
 console.log(menu, starters);
 
 //Mutated data or variables
@@ -68,6 +69,7 @@ let b = 999;
 const obj = { a: 3, b: 7, c: 14 };
 
 ({ a, b } = obj);
+console.log("----------------------------------------");
 console.log(a, b);
 
 //nested object
@@ -75,4 +77,5 @@ console.log(a, b);
 const {
   fri: { open: o, close: c },
 } = openingHours;
+console.log("----------------------------------------");
 console.log(o, c);
